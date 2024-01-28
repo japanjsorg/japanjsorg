@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Footer from '../template/Footer/Footer.vue'
+
 const { config } = useDocus()
 
 useHead({
@@ -23,7 +25,8 @@ useContentHead(config.value as any)
     <main>
       <slot />
     </main>
-    <AppFooter />
+    <!-- <AppFooter /> -->
+    <Footer></Footer>
   </div>
 </template>
 

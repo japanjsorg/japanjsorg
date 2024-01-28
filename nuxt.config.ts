@@ -1,4 +1,11 @@
 export default defineNuxtConfig({
+  css: ['~/assets/css/main.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   // https://github.com/nuxt-themes/docus
   extends: '@nuxt-themes/docus',
   devtools: { enabled: true },
