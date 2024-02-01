@@ -13,10 +13,10 @@ export default defineAppConfig({
       // }
     },
     github: {
-      dir: '.starters/default/content',
+      dir: 'content',
       branch: 'main',
-      repo: 'docus',
-      owner: 'nuxt-themes',
+      repo: 'japanjsorg',
+      owner: 'japanjsorg',
       edit: true
     },
     aside: {
@@ -29,7 +29,10 @@ export default defineAppConfig({
       fluid: true
     },
     header: {
-      logo: true,
+      logo: {
+        dark: '/icon.png',
+        light: '/icon.png'
+      },
       showLinkIcon: true,
       exclude: [],
       fluid: true
