@@ -23,8 +23,8 @@ export default defineNuxtConfig({
         // Open Graph
         { property: 'og:url', content: 'https://japanjs.org' },
         { property: 'og:title', content: 'JapanJS' },
-        { property: 'og:description', content: 'JapanJS は日本特有の機能を提供するライブラリです。 カナ変換、都道府県の一覧データなど、日本特有のめんどくさい実装を肩代わりします。Tree Shaking なライブラリなのでバンドルサイズが重くなりません。' },
-        { property: 'og:image', content: 'https://japanjs.org/ogp_image.jpg' },
+        // { property: 'og:description', content: 'JapanJS は日本特有の機能を提供するライブラリです。 カナ変換、都道府県の一覧データなど、日本特有のめんどくさい実装を肩代わりします。Tree Shaking なライブラリなのでバンドルサイズが重くなりません。' },
+        // { property: 'og:image', content: 'https://japanjs.org/ogp_image.jpg' },
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@takasqr' },
