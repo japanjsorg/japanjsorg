@@ -11,8 +11,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: echo GTM_ID=${{ vars.GTM_ID }} > .env
-      - run: npm ci && npm run generate
+      
+      - name: .env
+        run: echo GTM_ID=${{ vars.GTM_ID }} > .env
+      
+      - name: ci
+        run: npm ci
+
+      - name: lint
+        run: |
+          npm run lint
+
+      - name: typecheck
+        run: |
+          npm run typecheck
+          
+      - name: test:unit
+        run: |
+          npm run test:unit
+
+      - name: testt:e2e
+        run: |
+          npx playwright install
+          npm run test:e2e
+        
+      - name: generate
+        run: npm run generate
+      
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
