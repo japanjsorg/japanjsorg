@@ -10,3 +10,7 @@ dist
 sw.*
 .env
 .output
+
+# Playwright
+test-results
+playwright-report
