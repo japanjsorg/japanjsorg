@@ -2,3 +2,7 @@ dist
 node_modules
 .output
 .nuxt
+
+playwright.config.mts
+components/app
+components/docs

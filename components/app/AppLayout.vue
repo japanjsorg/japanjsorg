@@ -26,7 +26,7 @@ useContentHead(config.value as any)
       <slot />
     </main>
     <!-- <AppFooter /> -->
-    <Footer></Footer>
+    <Footer />
   </div>
 </template>
 

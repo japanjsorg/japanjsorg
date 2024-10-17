@@ -1,15 +1,19 @@
 <template>
   <footer class="bg-gray-900" aria-labelledby="footer-heading">
-    <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <h2 id="footer-heading" class="sr-only">
+      Footer
+    </h2>
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="bg-white h-14 w-14 p-2 rounded-full flex justify-center items-center">
-          <img class="h-8 rounded" src="https://takasqr.dev/logo.svg" alt="" >
+          <img class="h-8 rounded" src="https://takasqr.dev/logo.svg" alt="">
         </div>
         <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-sm font-semibold leading-6 text-white">アプリケーション</h3>
+              <h3 class="text-sm font-semibold leading-6 text-white">
+                アプリケーション
+              </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.solutions" :key="item.name">
                   <a :href="item.href" class="text-sm leading-6 text-gray-300 hover:text-white">{{ item.name }}</a>
@@ -17,7 +21,9 @@
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
-              <h3 class="text-sm font-semibold leading-6 text-white">開発者向け</h3>
+              <h3 class="text-sm font-semibold leading-6 text-white">
+                開発者向け
+              </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.support" :key="item.name">
                   <a :href="item.href" class="text-sm leading-6 text-gray-300 hover:text-white">{{ item.name }}</a>
@@ -27,7 +33,9 @@
           </div>
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-sm font-semibold leading-6 text-white">私について</h3>
+              <h3 class="text-sm font-semibold leading-6 text-white">
+                私について
+              </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.company" :key="item.name">
                   <a :href="item.href" class="text-sm leading-6 text-gray-300 hover:text-white">{{ item.name }}</a>
@@ -35,7 +43,9 @@
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
-              <h3 class="text-sm font-semibold leading-6 text-white">規約</h3>
+              <h3 class="text-sm font-semibold leading-6 text-white">
+                規約
+              </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.legal" :key="item.name">
                   <a :href="item.href" class="text-sm leading-6 text-gray-300 hover:text-white">{{ item.name }}</a>
@@ -52,7 +62,9 @@
             <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
           </a>
         </div>
-        <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">&copy; 2020 Takasqr All rights reserved.</p>
+        <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
+          &copy; 2020 Takasqr All rights reserved.
+        </p>
       </div>
     </div>
   </footer>
@@ -79,6 +91,7 @@ const navigation = {
   {
       name: 'X',
       href: 'https://x.com/takasqr',
+      // eslint-disable-next-line vue/one-component-per-file
       icon: defineComponent({
         render: () =>
           h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
@@ -91,6 +104,7 @@ const navigation = {
     {
       name: 'GitHub',
       href: 'https://github.com/takasqr',
+      // eslint-disable-next-line vue/one-component-per-file
       icon: defineComponent({
         render: () =>
           h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
